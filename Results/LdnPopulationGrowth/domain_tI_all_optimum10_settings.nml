@@ -1,0 +1,54 @@
+&file_paths
+    network_years_fp = './core_data/network/networks_5years_nodup_factcnct.p'
+    pop_grid_fp = './regular_grids/reg_grid_pop_1881_2011_nullfixed_allyears.shp'
+    rho_yrs_fp = './growth_results/rho_yrs.p'
+    smooth_yrs_fp = './growth_results/rho_yrs_smooth.p'
+    thames_fp = './core_data/geog/thames.p'
+    xy_wbc_fp = './core_data/network/xy_wbc_cc.p'
+/
+
+&grid_params
+    dt = 1
+    dx = 1
+    dy = 1
+    tot_ts = 180
+    xlim = 490.0, 574.0
+    ylim = 148.0, 214.0
+/
+
+&metadata
+    notes = 'optimised values with the all sink in tIV = 01st regime (1831-1891): Ynet(i) = Ygross(i), D = DI; 2nd regime (1892-1950): Ynet(i) = Ygross(i) - CL(i) - CT(i), R3rd regime (1951-1991): S, R4th regime (1992-2011): Ynet(i) = Ygross(i) - CL(i) - CT(i), S, R = 0 '
+    timestamp = '2022-11-24 17:22:59.285028'
+/
+
+&model_params
+    kc = 2046.6116522366522
+    kctiv = 4256.6
+    a_i_lim = 0
+    beta = 2.07
+    chi = ,
+    cr_fctr = 'rhohist'
+    ct_year = 1891
+    d = 0.03
+    di = 0.03
+    diff_mult = 4
+    end_yr = 2012
+    ext_sink_rate = 0.0026
+    gm = 1.8
+    int_sink_rate = 0.00934
+    kappa = 0.00023
+    method = 'domain'
+    mu = 0.359
+    ntwrk_factor = 'a_i_inv'
+    nu = 2.43
+    phi = ,
+    r = 158.5
+    rho_lim = 0
+    rho_limit = 12430.280000000017
+    sink_year = 1951
+    start_yr = 1831
+    tau = 0.995
+    ygross = 4.89
+    ygross0 = 4.14
+    ygross_e = 0.099
+/

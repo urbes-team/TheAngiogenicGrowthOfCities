@@ -1,0 +1,32 @@
+&file_paths
+    empty_grid_fp = './regular_grids/empty_regular_grid.shp'
+    init_network_fp = './core_data/network/1841_init_network.p'
+    network_years_fp = './core_data/network/networks_5years_nodup_factcnct.p'
+    rho_yrs_fp = './growth_results/rho_yrs.p'
+/
+
+&grid_params
+    dt = 1
+    dx = 1
+    dy = 1
+    ncols = 84
+    nrows = 66
+    tot_ts = 180
+    xlim = 490.0, 574.0
+    ylim = 148.0, 214.0
+/
+
+&metadata
+    notes = ''
+    timestamp = '2022-12-15 17:10:24.515518'
+/
+
+&model_params
+    cost_coeff = 4
+    dt = 10
+    edge_weight = 3000
+    g = 0.0008
+    max_stns = 6
+    phi = -2.5
+    psi = 1
+/
