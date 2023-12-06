@@ -27,6 +27,12 @@ The complex "real-life" network as reduced to single straight lines between each
 - Opening year of station
 - Closing year of station
 
+*Rail stations*
+- Station ID
+- Station name
+- Opening year of station
+- Closing year of station
+
 
 
 1. GreatBritainHistoricalGISProject2017
