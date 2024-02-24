@@ -1,5 +1,7 @@
 """
 Functions for creating all plots for the article.
+
+@author: Isabella Capel-Timms
 """
 # %load_ext autoreload
 # %autoreload 2
@@ -1381,7 +1383,7 @@ def model_concept_rho_ntwrk(pop_grid, ntwrk, cbar, savepath=None):
     ax.text(528500, 172000, s=r'$\longleftarrow$', rotation=270, **arrow_font)
     ax.text(528000, 171500, s=r'$\longleftarrow$', **arrow_font)
     ax.text(529000, 171500, s=r'$\longrightarrow$', **arrow_font)
-    ax.text(528500, 171500, s='$\\rho$(x,y)', ha='center', va='center',
+    ax.text(528500, 171500, s='$\\rho$(X)', ha='center', va='center',
             fontsize=12)
 
     ax.annotate('', xy=(0, -0.03), xycoords='axes fraction',
@@ -1483,7 +1485,7 @@ def npop_nv_simobs_comparison(rho_obs, rho_sim, ntwrk_obs, ntwrk_sim,
     cmap = plt.get_cmap('copper')#, np.max(years[1:]) - np.min(years[1:]) + 1)
     norm = colors.BoundaryNorm(np.arange(np.min(years[1:]) - 5,
                             np.max(years[1:]) + 11, 10), cmap.N)
-    fig, ax = plt.subplots(figsize=(5,3))
+    fig, ax = plt.subplots(figsize=(5,4))
     fig.patch.set_facecolor('w')
 
     ax.plot(total_obs_pop[1:], obs_stn_count[1:], ls=':', color='red', lw=2)
@@ -1521,7 +1523,7 @@ def npop_nv_simobs_comparison(rho_obs, rho_sim, ntwrk_obs, ntwrk_sim,
     lines = [mlines.Line2D([], [], marker=m, label=label, ls=style,
                         color=c, mfc='k', mec='k')
             for label, m, style, c in lineparams]
-    leg = ax.legend(lines, labels, loc='upper right', fontsize=8)
+    leg = ax.legend(lines, labels)
 
     plt.tight_layout()
     if savepath is not None:

@@ -1,6 +1,8 @@
 """
 Model coupling both the population and transport network growth model.
 Initiated with observed population and network
+
+@author: Isabella Capel-Timms
 """
 # %%
 from graph_functions import RhoGrid, remove_outside_nodes

@@ -1,0 +1,50 @@
+&file_paths
+    network_years_fp = './core_data/network/sydneymet_ttnetwork_years.p'
+    pop_grid_fp = './core_data/population/sydney_reg_pop_grid_1851_2011.shp'
+    rho_yrs_fp = './core_data/population/sydney_rho_yrs.p'
+    smooth_yrs_fp = './core_data/population/sydney_smooth_rho_yrs.p'
+    thames_fp = './core_data/geog/sydney_ocean_mask.p'
+/
+
+&grid_params
+    dt = 1
+    dx = 1
+    dy = 1
+    tot_ts = 180
+    xlim = 9626, 9710
+    ylim = 4380, 4485
+/
+
+&metadata
+    notes = 'Parrams for logisitic more engineered'
+    timestamp = '2023-08-16 12:30:00.290103'
+/
+
+&model_params
+    kc = 535.2487244897959
+    kctiv = 4256.6
+    a_i_lim = ,
+    beta = 2
+    cr_fctr = 'rhohist'
+    ct_year = 1881
+    d = 0.03
+    di = 0.06
+    end_yr = 2012
+    ext_sink_rate = 0.0026
+    gm = 1.8
+    int_sink_rate = 0.009
+    kappa = 0.0004
+    method = 'domain'
+    mu = 0.33
+    ntwrk_factor = 'a_i_inv'
+    nu = 2.33
+    r = 331.7
+    rho_lim = ,
+    rho_limit = nan
+    sink_year = 0
+    start_yr = 1851
+    tau = 1
+    ygross = 4.89
+    ygross0 = 10
+    ygross_e = 0.1
+/

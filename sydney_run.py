@@ -5,6 +5,8 @@ the growth of the observed network.
 Using optimised parameters.
 Phase I (1851-1881): Ynet(i) = Ygross(i), D = DI
 Phase II.1 (1882-2011): Ynet(i) = Ygross(i) - CL(i) - CT(i), R
+
+@author: Isabella Capel-Timms
 """
 # %%
 from plot_growth import *

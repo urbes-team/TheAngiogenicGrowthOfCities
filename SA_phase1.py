@@ -1,6 +1,8 @@
 """
 Run for sensitivity analysis of Phase I of the London case, including finding
 optimum parameters.
+
+@author: Isabella Capel-Timms
 """
 # %%
 from graph_functions import NetworkGraph, SubGraph, RhoGrid
@@ -24,7 +26,7 @@ def SA_phase1(ygross0_par, ygrosse_par, d_par, run_no):
                f'yge{np.format_float_scientific(ygrosse_par)}_' \
                f'D{np.format_float_scientific(d_par)}'
 
-    dir_path = f'/home/ucesica/Scratch/SAphase1saltelli/run_{int(run_no)}'
+    dir_path = f'SaltelliSA/run_{int(run_no)}'
     print(os.getcwd())
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)

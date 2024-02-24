@@ -3,7 +3,9 @@ This script simulates network growth for the London case, initiating with
 the real network data and allowing the model to respond to the growth of
 the observed population.
 Population follows observations only (not modelled) and the transport network is
-grown stochastically following Li et al..
+grown stochastically following Li et al. .
+
+@author: Isabella Capel-Timms
 """
 # %%
 from graph_functions import connect_new_subnetworks

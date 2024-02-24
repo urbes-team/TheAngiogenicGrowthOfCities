@@ -1,4 +1,9 @@
 # %%
+"""
+Some functions for plotting.
+
+@author: Isabella Capel-Timms
+"""
 from networkx.algorithms.bipartite.basic import color
 from networkx.readwrite import edgelist
 from numpy.random import standard_cauchy
@@ -3514,10 +3519,10 @@ def plot_obs_sim_contours_diff(obs_yrs, sim_yrs, years, levels, figsize=(8.5,8.5
         plt.savefig(cbar_savepath, dpi=300)
     plt.show()
 
-    def plot_twocity_contours_diff(
-            ldn_obs, ldn_sim, syd_obs, syd_sim, levels, xvyv_ldn, xvyv_syd,
-            figsize, cmap='viridis', cmap_diff='bwr', borders=None,
-            savepath=None, cbar_savepath=None):
+def plot_twocity_contours_diff(
+        ldn_obs, ldn_sim, syd_obs, syd_sim, levels, xvyv_ldn, xvyv_syd,
+        figsize, cmap='viridis', cmap_diff='bwr', borders=None,
+        savepath=None, cbar_savepath=None):
 
         ldn_sim = trim_array(ldn_sim, borders) / 1000
         ldn_obs = trim_array(ldn_obs, borders) / 1000

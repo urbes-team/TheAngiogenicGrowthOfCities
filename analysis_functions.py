@@ -1,5 +1,7 @@
 """
 All functions needed for analysis either during or after runs
+
+@author: Isabella Capel-Timms
 """
 import networkx as nx
 import numpy as np

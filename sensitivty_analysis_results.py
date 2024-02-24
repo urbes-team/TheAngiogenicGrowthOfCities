@@ -1,3 +1,8 @@
+"""
+Script for interpreting sensitivity analysis results
+
+@author: Isabella Capel-Timms
+"""
 import pandas as pd
 import numpy as np
 import pickle

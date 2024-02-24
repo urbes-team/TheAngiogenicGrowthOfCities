@@ -7,6 +7,8 @@ Phase I (1831-1891): Ynet(i) = Ygross(i), D = DI
 Phase II.1 (1892-1950): Ynet(i) = Ygross(i) - CL(i) - CT(i), R
 Phase II.2 (1951-1991): S, R
 Phase II.3 (1992-2011): Ynet(i) = Ygross(i) - CL(i) - CT(i), S, R = 0
+
+@author: Isabella Capel-Timms
 """
 # %%
 from graph_functions import NetworkGraph, SubGraph, RhoGrid

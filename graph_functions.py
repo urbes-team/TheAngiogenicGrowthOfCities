@@ -1,6 +1,8 @@
 """
 Script holding the classes that direct population and network response, and some
 pre-processing functions.
+
+@author: Isabella Capel-Timms
 """
 import networkx as nx
 import numpy as np
@@ -1091,7 +1093,7 @@ class RhoGrid:
             Factor used to calculate living cost
         """
 
-        if cr_fctr == 'rhohist':  # TODO: does this need to be in ts for-loop?
+        if cr_fctr == 'rhohist':
             self.last_rho = copy(self.rho)
             if self.rho_hist is None:
                 self.rho_hist = copy(self.rho)

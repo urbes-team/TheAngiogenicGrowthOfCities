@@ -1,5 +1,7 @@
 # Script for creating population clusters, using code for the City Clustering
 # Algorithm (Rozenfeld et al. 2011)
+# Script author: Isabella Capel-Timms
+
 library(osc)
 library(ggplot2)
 library(hrbrthemes)
